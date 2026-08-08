@@ -3,7 +3,7 @@ class Solution {
 
         int n = nums.length;
 
-        int ans[] = new int[2];
+        int ans [] = new int[2];
 
         HashMap<Integer,Integer> map = new HashMap<>();
 
@@ -14,15 +14,12 @@ class Solution {
             if(map.containsKey(c)){
 
                 return new int[]{map.get(c),i};
-            } 
+            }
 
             map.put(nums[i],i);
         }
 
         return new int[]{};
-
-
-
         
     }
 }
