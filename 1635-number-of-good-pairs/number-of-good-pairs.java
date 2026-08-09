@@ -5,16 +5,15 @@ class Solution {
 
         int count = 0;
 
-        HashMap<Integer,Integer> map = new HashMap<>();
-
         for(int i=0;i<n;i++){
 
-            if(map.containsKey(nums[i]))
+            for(int j=i+1;j<n;j++){
 
-                count+=map.get(nums[i]);
+                if(nums[i]==nums[j] && i<j){
 
-                map.put(nums[i],map.getOrDefault(nums[i],0)+1);
-            
+                    count++;
+                }
+            }
         }
 
         return count;
