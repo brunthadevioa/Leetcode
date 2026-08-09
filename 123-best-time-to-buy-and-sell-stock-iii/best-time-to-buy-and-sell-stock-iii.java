@@ -1,15 +1,13 @@
 class Solution {
     public int maxProfit(int[] prices) {
 
-     
+        int s1 = 0;
+
+        int s2 = 0;
 
         int p1 = Integer.MIN_VALUE;
 
         int p2 = Integer.MIN_VALUE;
-
-        int s1 = 0;
-
-        int s2 = 0;
 
         for(int p : prices){
 
@@ -23,7 +21,6 @@ class Solution {
         }
 
         return s2;
-
         
     }
 }
