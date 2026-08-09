@@ -5,20 +5,22 @@ class Solution {
 
         int p = 0;
 
-        int min = prices[0];
+        int max = prices[0];
 
         for(int i=0;i<n;i++){
 
-            if(prices[i]<min){
+            if(prices[i]<max){
 
-                min = prices[i];
+                max = prices[i];
             }
 
-            else if(p<prices[i]-min){
+            else if(p<prices[i] - max){
 
-                p = prices[i]-min;
+                p = prices[i] - max;
             }
         }
-      return p;  
+
+        return p;
+        
     }
 }
