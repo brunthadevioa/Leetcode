@@ -5,7 +5,7 @@ class Solution {
 
         int m = nums2.length;
 
-        int[] ans = new int[n];
+        int ans[] = new int[n];
 
         for(int i=0;i<n;i++){
 
@@ -20,7 +20,7 @@ class Solution {
                     found = true;
                 }
 
-                if(nums2[j]>nums1[i] && found == true){
+                if(nums1[i]<nums2[j] && found == true){
 
                     ans[i] = nums2[j];
 
@@ -32,9 +32,10 @@ class Solution {
 
             if(nge == false){
 
-                ans[i] = -1;
+                ans[i]=-1;
             }
         }
+
         return ans;
         
     }
