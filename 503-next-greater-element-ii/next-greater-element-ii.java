@@ -3,7 +3,7 @@ class Solution {
 
         int n = nums.length;
 
-        int[] ans = new int[n];
+        int ans[] = new int[n];
 
         for(int i=0;i<n;i++){
 
@@ -11,7 +11,7 @@ class Solution {
 
             for(int j=i+1;j<2*n;j++){
 
-                if(nums[j%n]>nums[i]){
+                if(nums[i]<nums[j%n]){
 
                     ans[i] = nums[j%n];
 
@@ -22,6 +22,7 @@ class Solution {
             }
 
             if(nge == false){
+
 
                 ans[i] = -1;
             }
