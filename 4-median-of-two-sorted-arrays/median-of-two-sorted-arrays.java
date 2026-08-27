@@ -5,7 +5,7 @@ class Solution {
 
         int b = nums2.length;
 
-        int[] arr = new int[a+b];
+        int arr[] = new int[a+b];
 
         int i=0,j=0,k=0;
 
