@@ -3,7 +3,7 @@ class Solution {
 
         StringBuilder res = new StringBuilder();
 
-        int i = 0, j = 0;
+        int i=0,j=0;
 
         while(i<word1.length() && j<word2.length()){
 
@@ -20,17 +20,16 @@ class Solution {
 
             res.append(word1.charAt(i));
 
-             i++;
+            i++;
         }
 
         while(j<word2.length()){
 
             res.append(word2.charAt(j));
 
-             j++;
+            j++;
         }
-
-        return res.toString();
         
+        return res.toString();
     }
 }
