@@ -11,13 +11,15 @@ class Solution {
 
                 current++;
 
-                max = Math.max(max,current);
+              
             }
 
             else if(c==')'){
 
                 current--;
             }
+
+            max = Math.max(max,current);
         }
 
         return max;
