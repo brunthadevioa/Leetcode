@@ -69,7 +69,7 @@ class Calculator {
      */
     power(value) {
 
-        this.value = this.value ** value;
+        this.value **=  value;
 
         return this;
         
