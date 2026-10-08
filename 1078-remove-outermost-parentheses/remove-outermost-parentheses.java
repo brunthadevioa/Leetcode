@@ -1,7 +1,7 @@
 class Solution {
     public String removeOuterParentheses(String s) {
 
-        String ans = "";
+        StringBuilder ans = new StringBuilder();
 
         int count = 0;
 
@@ -9,10 +9,9 @@ class Solution {
 
             if(ch == '('){
 
-                if(count>0){
+                if(count > 0){
 
-                    ans += ch;
-
+                    ans.append(ch);
                 }
 
                 count++;
@@ -24,12 +23,13 @@ class Solution {
 
                 if(count>0){
 
-                    ans += ch;
+                    ans.append(ch);
                 }
             }
         }
 
-        return ans;
+        return ans.toString();
+
         
     }
 }
