@@ -3,14 +3,15 @@ class Solution {
 
         HashSet<Integer> set = new HashSet<>();
 
-        for(int n : nums){
-
+        for(int n : nums)
+        {
             if(!set.add(n))
-
-            return true;
+            {
+                 return true;
+            
+            }
         }
 
         return false;
-        
     }
 }
